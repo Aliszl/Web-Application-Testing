@@ -59,7 +59,7 @@ function App() {
           </button>
           <button
             className="homeButtons__fieldGoal"
-            onClick={() => setHomeScore(homeScore - 7)}
+            onClick={() => setHomeScore(homeScore + 2)}
           >
             Foul
           </button>
