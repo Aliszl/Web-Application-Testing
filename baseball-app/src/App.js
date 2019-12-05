@@ -55,26 +55,21 @@ function App() {
             className="homeButtons__fieldGoal"
             onClick={() => setHomeScore(homeScore + 1)}
           >
-            Hit
+            Ball
           </button>
           <button
             className="homeButtons__fieldGoal"
             onClick={() => setHomeScore(homeScore - 7)}
           >
-            remove Strike
+            Foul
           </button>
           <button
             className="homeButtons__fieldGoal"
-            onClick={() => setHomeScore(homeScore - 14)}
-          >
-            remove Hit
-          </button>
-          <button
-            className="homeButtons__reset"
             onClick={() => setHomeScore(0)}
           >
-            Reset
+            Hit
           </button>
+          <br />
         </div>
       </section>
     </div>
