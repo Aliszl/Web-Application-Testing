@@ -18,13 +18,25 @@ export default function Display() {
         <div className="homeButtons">
           <button
             className="homeButtons__touchdown"
-            onClick={() => setHomeScore(homeScore + 1)}
+            onClick={() => {
+              if (homeScore <= 2) {
+                setHomeScore(homeScore + 1);
+              } else {
+                setHomeScore(0);
+              }
+            }}
           >
             Strike
           </button>
           <button
             className="homeButtons__fieldGoal"
-            onClick={() => setHomeScore(homeScore + 1)}
+            onClick={() => {
+              if (homeScore <= 3) {
+                setHomeScore(homeScore + 1);
+              } else {
+                setHomeScore(0);
+              }
+            }}
           >
             Ball
           </button>
