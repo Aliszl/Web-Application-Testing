@@ -16,7 +16,6 @@ export default function Display() {
       </section>
       <section className="buttons">
         <div className="homeButtons">
-          {/* Dashboard Buttons */}
           <button
             className="homeButtons__touchdown"
             onClick={() => setHomeScore(homeScore + 1)}
